@@ -35,31 +35,3 @@ async fn main() -> io::Result<()> {
         .run()
         .await
 }
-
-/// mod constants
-/// mod likes;
-/// mod tweets;
-/// mod resonse;
-/// #[actix_rt::main]
-/// async fn main() -> io::Result<()> {
-/// env::set_var("RUST_LOG", "actix_web=debug,actix_server=info");
-/// env_logger::init();
-///
-/// HttpServer::new(|| {
-///     App:new()
-///     .wrap(middlewar::logger::default())
-///     .service(tweet::list);
-///     .service(tweet::get);
-///     .service(tweet::create);
-///     .service(tweet::delete);
-///     .service(likes::list);
-///     .service(likes::minus_one);
-///     .service(likes::plus_one);
-///     })
-///     .bind("0.0.0.0.:9090")
-///     .run()
-///     .await
-/// }
-///
-
-///
